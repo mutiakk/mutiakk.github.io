@@ -1,0 +1,83 @@
+body, html {
+	background: rgb(223, 223, 223);
+	margin: 0;
+	padding: 0;
+}
+.calculator {
+    position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
+	border-radius: 14px;
+	padding-bottom: 20px;
+	width: 280px;
+}
+
+.calculator-screen {
+    width: 97%;
+    height: 100px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    font-size: 36px;
+    border: none;
+    border-radius: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.calculator-keys {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+}
+
+button {
+    width: 60px;
+	height: 60px;
+	float: left;
+	padding: 0;
+	margin: 5px;
+	box-sizing: border-box;
+	background: #928e8e;
+	border: none;
+	font-size: 30px;
+	line-height: 30px;
+	border-radius: 50%;
+	font-weight: 700;
+	color: #000000;
+	cursor: pointer;
+}
+
+.buttonClear{
+    border-radius: 20px;
+    width: 220px;
+    margin: 5px;
+}
+.zero-btn {
+    width: 130px;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 2px;
+}
+
+.operator, .buttonEquals {
+    background-color: orange;
+}
+
+button:hover {
+    background-color: darkgray;
+}
+
+.operator:hover, .buttonEquals:hover {
+    background-color: orangered;
+}
